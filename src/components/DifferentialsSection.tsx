@@ -1,6 +1,8 @@
 import { Heart, Target, Zap, Shield } from "lucide-react";
 
-const DifferentialsSection = () => {
+type SectionProps = { id?: string };
+
+const DifferentialsSection = ({ id }: SectionProps) => {
   const differentials = [
     {
       icon: Heart,
@@ -25,7 +27,7 @@ const DifferentialsSection = () => {
   ];
 
   return (
-    <section className="py-20 gradient-section">
+    <section id={id} className="py-20 gradient-section">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

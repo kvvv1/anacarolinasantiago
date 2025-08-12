@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
-import heroImage from "@/assets/livia-garcia-hero.jpg";
 
-const HeroSection = () => {
+type HeroSectionProps = {
+  imageSrc?: string;
+};
+
+const HeroSection = ({ imageSrc = "/liviagarcianutri.png" }: HeroSectionProps) => {
   return (
     <section className="min-h-screen gradient-hero flex items-center relative overflow-hidden">
       <div className="container mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
@@ -50,7 +53,7 @@ const HeroSection = () => {
         <div className="relative animate-slide-up">
           <div className="relative rounded-3xl overflow-hidden shadow-soft">
             <img 
-              src={heroImage} 
+              src={imageSrc} 
               alt="Nutricionista Lívia Garcia" 
               className="w-full h-auto object-cover"
             />
