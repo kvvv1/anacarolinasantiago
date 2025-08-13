@@ -5,47 +5,59 @@ type HeroSectionProps = {
   imageSrc?: string;
 };
 
-const HeroSection = ({ imageSrc = "/liviagarcianutri.png" }: HeroSectionProps) => {
+const HeroSection = ({ imageSrc = "/anacarolina.avif" }: HeroSectionProps) => {
   return (
     <section className="min-h-screen gradient-hero flex items-center relative overflow-hidden">
       <div className="container mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div className="space-y-8 animate-fade-in">
           <div className="space-y-6">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-foreground">
-              Nutrição feita para você{" "}
-              <span className="text-primary">viver melhor</span>
+              Saúde integral, equilíbrio e performance{" "}
+              <span className="text-primary">de forma sustentável</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
-              Planos personalizados para emagrecimento e performance esportiva, 
-              com acompanhamento humano e empático.
+              A nutricionista Ana Caroline Santiago ajuda você a alcançar seus objetivos com
+              uma abordagem acolhedora e personalizada.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-soft transition-smooth hover:shadow-lg hover:scale-105"
-            >
-              <Phone className="mr-2 h-5 w-5" />
-              Agende sua consulta
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold transition-smooth hover:scale-105"
-            >
-              Saiba mais
-            </Button>
+            <a href="#localizacao" className="inline-flex">
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold shadow-soft transition-smooth hover:shadow-lg hover:scale-105"
+              >
+                <Phone className="mr-2 h-5 w-5" />
+                Agende sua consulta
+              </Button>
+            </a>
+            <a href="#sobre" className="inline-flex">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg font-semibold transition-smooth hover:scale-105"
+              >
+                Saiba mais
+              </Button>
+            </a>
           </div>
           
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-primary rounded-full"></div>
-              <span>Atendimento presencial e online</span>
+              <span>Emagrecimento saudável e sustentável</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-accent rounded-full"></div>
-              <span>Belo Horizonte, MG</span>
+              <span>Longevidade e qualidade de vida</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <span>Estilo de vida equilibrado</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-accent rounded-full"></div>
+              <span>Hipertrofia e ganho muscular</span>
             </div>
           </div>
         </div>
@@ -54,7 +66,7 @@ const HeroSection = ({ imageSrc = "/liviagarcianutri.png" }: HeroSectionProps) =
           <div className="relative rounded-3xl overflow-hidden shadow-soft">
             <img 
               src={imageSrc} 
-              alt="Nutricionista Lívia Garcia" 
+              alt="Nutricionista Ana Caroline Santiago" 
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>

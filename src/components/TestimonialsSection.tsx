@@ -30,7 +30,7 @@ const TestimonialsSection = ({ id }: SectionProps) => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Depoimentos de <span className="text-primary">Pacientes</span>
+            Depoimentos e <span className="text-primary">resultados</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mt-8"></div>
         </div>

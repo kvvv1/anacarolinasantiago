@@ -2,10 +2,10 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, MessageCircle } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-const ADDRESS = "Av. Cristiano Machado, 1682 - Cidade Nova, Belo Horizonte - MG, 31170-024";
-const PHONE_DISPLAY = "(31) 99237-6441";
-const WHATSAPP_NUMBER = "5531992376441";
-const WHATSAPP_MESSAGE = "Olá, gostaria de agendar uma consulta.";
+const ADDRESS = "R. Silveira, 525 - Graça, Belo Horizonte - MG, 31140-000";
+const PHONE_DISPLAY = "(31) 99699-6685";
+const WHATSAPP_NUMBER = "5531996996685";
+const WHATSAPP_MESSAGE = "Olá, gostaria de agendar uma consulta com a Ana Caroline Santiago.";
 
 type SectionProps = { id?: string };
 
@@ -20,10 +20,10 @@ const CTASection = ({ id }: SectionProps) => {
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Consultório e Contato
+              Agende sua consulta
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Estou te esperando em um consultório acolhedor e bem localizado em Belo Horizonte.
+              Atendimentos presenciais e online. Agende pelo WhatsApp e dê o primeiro passo rumo à sua saúde integral.
             </p>
 
             <div className="space-y-4">
@@ -32,8 +32,8 @@ const CTASection = ({ id }: SectionProps) => {
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground">Endereço</p>
-                  <p className="text-muted-foreground">{ADDRESS}</p>
+                  <p className="font-semibold text-foreground">Atendimento</p>
+                  <p className="text-muted-foreground">Presencial e online • {ADDRESS}</p>
                 </div>
               </div>
 

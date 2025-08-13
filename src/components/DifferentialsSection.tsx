@@ -5,24 +5,24 @@ type SectionProps = { id?: string };
 const DifferentialsSection = ({ id }: SectionProps) => {
   const differentials = [
     {
-      icon: Heart,
-      title: "Atendimento Humanizado",
-      description: "Cada pessoa é única. Por isso, desenvolvo um plano alimentar que respeita suas preferências, rotina e objetivos pessoais."
+      icon: Target,
+      title: "Saúde de longo prazo",
+      description: "Mudanças consistentes que priorizam sua saúde hoje e no futuro, evitando soluções imediatistas."
     },
     {
-      icon: Target,
-      title: "Resultados Sustentáveis",
-      description: "Foco em mudanças graduais e realistas que se tornam hábitos duradouros, garantindo resultados que permanecem ao longo do tempo."
+      icon: Heart,
+      title: "Sustentabilidade e equilíbrio",
+      description: "Sem extremismos: planos que cabem na sua rotina, preservam o prazer de comer e promovem bem‑estar."
     },
     {
       icon: Zap,
-      title: "Flexibilidade no Plano",
-      description: "Planos alimentares que se adaptam ao seu estilo de vida, sem restrições extremas ou 'dietas milagrosas'."
+      title: "Planos individualizados",
+      description: "Estratégias personalizadas a partir da sua história, objetivos, exames e preferências."
     },
     {
       icon: Shield,
-      title: "Acompanhamento Contínuo",
-      description: "Suporte constante através de consultas regulares e comunicação direta para ajustes e esclarecimento de dúvidas."
+      title: "Nutrição para longevidade",
+      description: "A nutrição como pilar para viver mais e melhor, com energia, autonomia e qualidade de vida."
     }
   ];
 
@@ -31,10 +31,10 @@ const DifferentialsSection = ({ id }: SectionProps) => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Por que escolher a <span className="text-primary">Lívia Garcia?</span>
+            Filosofia e <span className="text-primary">diferenciais</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Diferenciais que fazem toda a diferença na sua jornada de transformação
+            Foco em saúde de longo prazo, sustentabilidade e equilíbrio
           </p>
           <div className="w-24 h-1 bg-primary mx-auto mt-8"></div>
         </div>

@@ -1,4 +1,4 @@
-import { Stethoscope, Dumbbell, Video, MapPin } from "lucide-react";
+import { Heart, Activity, Leaf, Dumbbell, ClipboardList } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 type SectionProps = { id?: string };
@@ -6,28 +6,34 @@ type SectionProps = { id?: string };
 const ServicesSection = ({ id }: SectionProps) => {
   const services = [
     {
-      icon: Stethoscope,
-      title: "Nutrição Clínica",
-      description: "Planos alimentares personalizados focados em saúde, qualidade de vida e emagrecimento sustentável.",
-      features: ["Avaliação nutricional completa", "Planos alimentares flexíveis", "Acompanhamento contínuo"]
+      icon: Heart,
+      title: "Emagrecimento saudável",
+      description: "Estratégias personalizadas para perder gordura com saúde e sem extremismos.",
+      features: ["Plano flexível", "Educação alimentar", "Resultados sustentáveis"]
+    },
+    {
+      icon: Activity,
+      title: "Longevidade e qualidade de vida",
+      description: "Nutrição como pilar da saúde a longo prazo, energia e disposição no dia a dia.",
+      features: ["Prevenção ativa", "Rotina realista", "Bem-estar contínuo"]
+    },
+    {
+      icon: Leaf,
+      title: "Estilo de vida equilibrado",
+      description: "Construção de hábitos e relação saudável com a comida, sem dietas restritivas.",
+      features: ["Flexibilidade", "Prazer em comer", "Autonomia"]
     },
     {
       icon: Dumbbell,
-      title: "Nutrição Esportiva",
-      description: "Estratégias nutricionais para otimizar performance, recuperação e composição corporal de atletas.",
-      features: ["Periodização nutricional", "Suplementação orientada", "Melhora da performance"]
+      title: "Hipertrofia e ganho muscular",
+      description: "Planejamento para aumento de massa magra e melhora da performance e recuperação.",
+      features: ["Periodização", "Ajustes por fase", "Composição corporal"]
     },
     {
-      icon: Video,
-      title: "Atendimento Online",
-      description: "Consultas virtuais com a mesma qualidade do presencial, para sua comodidade e flexibilidade.",
-      features: ["Consultas por videochamada", "Materiais digitais", "Suporte via WhatsApp"]
-    },
-    {
-      icon: MapPin,
-      title: "Atendimento Presencial",
-      description: "Consultório moderno e acolhedor em Belo Horizonte, com toda estrutura para seu atendimento.",
-      features: ["Consultório em BH", "Bioimpedância", "Ambiente acolhedor"]
+      icon: ClipboardList,
+      title: "Avaliação nutricional personalizada",
+      description: "Análise completa do seu histórico, hábitos e exames para traçar metas claras.",
+      features: ["Duração de 1 hora", "Anamnese aprofundada", "Plano inicial"]
     }
   ];
 
@@ -36,15 +42,15 @@ const ServicesSection = ({ id }: SectionProps) => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Serviços <span className="text-primary">Especializados</span>
+            <span className="text-primary">Especialidades</span>
           </h2>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            Atendimento personalizado que respeita sua individualidade e estilo de vida
+            Abordagens para saúde integral, equilíbrio e performance
           </p>
           <div className="w-24 h-1 bg-primary mx-auto mt-8"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {services.map((service, index) => (
             <Card 
               key={index} 

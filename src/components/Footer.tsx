@@ -9,11 +9,10 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-3">
-                Lívia Garcia
+                Ana Caroline Santiago
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Nutricionista especializada em emagrecimento saudável e nutrição esportiva. 
-                Transformando vidas através da alimentação consciente.
+                Nutricionista dedicada à saúde integral, equilíbrio e performance — sem extremismos e com foco em longevidade.
               </p>
             </div>
             
@@ -36,14 +35,14 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                   <Phone className="h-4 w-4 text-primary" />
                 </div>
-                <span className="text-muted-foreground">(31) 9999-9999</span>
+                <span className="text-muted-foreground">(31) 99699-6685</span>
               </div>
               
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
                   <Mail className="h-4 w-4 text-primary" />
                 </div>
-                <span className="text-muted-foreground">contato@liviagarcia.com.br</span>
+                <span className="text-muted-foreground">contato@anacarolinesantiago.com</span>
               </div>
               
               <div className="flex items-start gap-3">
@@ -51,8 +50,8 @@ const Footer = () => {
                   <MapPin className="h-4 w-4 text-primary" />
                 </div>
                 <div className="text-muted-foreground">
-                  <p>Consultório em Belo Horizonte</p>
-                  <p className="text-sm">Endereço completo será informado no agendamento</p>
+                  <p>R. Silveira, 525 - Graça, Belo Horizonte - MG, 31140-000</p>
+                  <p className="text-sm">Atendimento presencial e online</p>
                 </div>
               </div>
             </div>
@@ -85,10 +84,10 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 text-center">
           <p className="text-muted-foreground">
-            © 2024 Lívia Garcia - Nutricionista. Todos os direitos reservados.
+            © 2024 Ana Caroline Santiago - Nutricionista. Todos os direitos reservados.
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            CRN-9: 12345 • Belo Horizonte, MG
+            CRN: — • Brasil
           </p>
         </div>
       </div>

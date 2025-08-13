@@ -5,10 +5,11 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 
 const LINKS = [
   { href: "#sobre", label: "Sobre" },
-  { href: "#servicos", label: "Serviços" },
-  { href: "#diferenciais", label: "Diferenciais" },
+  { href: "#servicos", label: "Especialidades" },
+  { href: "#atendimento", label: "Atendimento" },
+  { href: "#diferenciais", label: "Filosofia" },
   { href: "#depoimentos", label: "Depoimentos" },
-  { href: "#localizacao", label: "Localização" },
+  { href: "#localizacao", label: "Agende" },
 ]
 
 export default function Header() {
@@ -26,7 +27,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2 font-bold text-lg">
           <img src="/favicon.svg" alt="Logo nutrição" className="h-7 w-7" />
-          <span>Lívia Garcia</span>
+          <span>Ana Caroline Santiago</span>
         </a>
         <ul className="hidden md:flex gap-6 text-sm">
           {LINKS.map(link => (
@@ -48,7 +49,7 @@ export default function Header() {
               <SheetHeader>
                 <SheetTitle className="flex items-center gap-2">
                   <img src="/favicon.svg" alt="Logo nutrição" className="h-6 w-6" />
-                  <span>Lívia Garcia</span>
+                  <span>Ana Caroline Santiago</span>
                 </SheetTitle>
               </SheetHeader>
               <nav className="mt-6 space-y-3">
