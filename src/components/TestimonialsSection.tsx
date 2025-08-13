@@ -35,7 +35,7 @@ const TestimonialsSection = ({ id }: SectionProps) => {
           <div className="w-24 h-1 bg-primary mx-auto mt-8"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card 
               key={index}

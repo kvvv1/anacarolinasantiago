@@ -50,7 +50,7 @@ const ServicesSection = ({ id }: SectionProps) => {
           <div className="w-24 h-1 bg-primary mx-auto mt-8"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+		<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8">
           {services.map((service, index) => (
             <Card 
               key={index} 

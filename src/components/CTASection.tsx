@@ -17,7 +17,7 @@ const CTASection = ({ id }: SectionProps) => {
   return (
     <section id={id} className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
+		<div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-start">
           <div className="space-y-6">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
               Agende sua consulta

@@ -13,7 +13,7 @@ const AboutSection = ({ id }: SectionProps) => {
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+		<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="space-y-8 animate-slide-up">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
