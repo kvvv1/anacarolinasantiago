@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const LINKS = [
   { href: "#sobre", label: "Sobre" },
@@ -34,6 +37,30 @@ export default function Header() {
             </li>
           ))}
         </ul>
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="h-9 w-9">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right">
+              <SheetHeader>
+                <SheetTitle className="flex items-center gap-2">
+                  <img src="/favicon.svg" alt="Logo nutrição" className="h-6 w-6" />
+                  <span>Lívia Garcia</span>
+                </SheetTitle>
+              </SheetHeader>
+              <nav className="mt-6 space-y-3">
+                {LINKS.map(link => (
+                  <a key={link.href} href={link.href} className="block py-2 text-base text-foreground">
+                    {link.label}
+                  </a>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
       </nav>
     </header>
   )
